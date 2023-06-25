@@ -8,17 +8,17 @@ let options={
 let userData = JSON.parse(sessionStorage.getItem('user'));
 let id = userData.userId.slice(-1);
 
-async function getFormData(){
-    let response = await fetch(`http://localhost:8080/joshiSoftware/item/${id}`,options);
-    let data = await response.json();
-    console.log(data);
-    if(data.isFilled == 1){
-        console.log('inside');
-        document.getElementById('main-div').style.display = "none";
-        document.getElementById('form-filled').style.display = 'flex';
-    }
-}
-getFormData();
+// async function getFormData(){
+//     let response = await fetch(`http://localhost:8080/joshiSoftware/item/${id}`,options);
+//     let data = await response.json();
+//     console.log(data);
+//     if(data.isFilled == 1){
+//         console.log('inside');
+//         document.getElementById('main-div').style.display = "none";
+//         document.getElementById('form-filled').style.display = 'flex';
+//     }
+// }
+// getFormData();
 
 //to save data to database
 let submit = document.getElementById('submit');
@@ -56,7 +56,7 @@ submit.onclick = async(e) =>{
         boxCount:boxCount,
         specification:specification,
         checklist:checklist,
-        isFilled:1
+        customer:id
     };
     console.log(items);
     let data=JSON.stringify(items);
@@ -136,4 +136,9 @@ let logout = document.getElementById('logout');
 logout.onclick = () =>{
     sessionStorage.removeItem('user');
     window.location.href = 'index.html';
+}
+
+let back = document.getElementById('back');
+back.onclick = () =>{
+    window.location.href = 'customer.html'
 }

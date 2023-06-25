@@ -66,7 +66,7 @@ body{
     font-size: 15px;
 }
 
-.main-content form button{
+.main-content form button, #back{
     padding: 10px;
     margin: 50px 0px 0px 0px;
     border-radius: 50px;
@@ -74,6 +74,17 @@ body{
     border: 2px solid white;
     color: white;
     font-size: 17px;
+}
+
+#back{
+    width: 100px;
+}
+
+#back:hover{
+    border: 2px solid rgb(3, 36, 65);
+    background-color: white;
+    color: rgb(3, 36, 65);
+    cursor: pointer;
 }
 
 .main-content form button:hover{
@@ -92,7 +103,9 @@ body{
 
 #form-filled{
     display: none;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 25px;
     color: rgb(3, 36, 65);
 }
@@ -105,3 +118,4 @@ body{
 #logout:hover{
     border: 2px solid white;
 }
+
