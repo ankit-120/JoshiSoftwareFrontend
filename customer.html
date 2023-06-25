@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juhosi Software | Form</title>
+    <link rel="stylesheet" href="css/customer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="header">
+        <div id="logout">Logout</div>
+    </div>
+    <div id="main-div" class="main-content">
+        <span id="alert-box"></span>
+        <form action="">
+            <div class="form-item">
+                <label for="orderDate">Order Date : </label>
+                <input type="date" id="orderDate" required>
+            </div>
+
+            <div class="form-item">
+                <label for="company">Company : </label>
+                <input type="text" id="company" required>
+            </div>
+            <div class="error-msg" id="error-company"></div>
+
+            <div class="form-item">
+                <label for="owner">Owner : </label>
+                <input type="text" id="owner" required>
+            </div>
+            <div class="error-msg" id="error-owner"></div>
+
+            <div class="form-item">
+                <label for="item">Item : </label>
+                <input type="text" id="item" required>
+            </div>
+
+            <div class="form-item">
+                <label for="quantity">Quantity : </label>
+                <input type="text" id="quantity" required>
+            </div>
+            <div class="error-msg" id="error-quantity"></div>
+
+            <div class="form-item">
+                <label for="weight">Weight : </label>
+                <input type="text" id="weight" required>
+            </div>
+            <div class="error-msg" id="error-weight"></div>
+
+            <div class="form-item">
+                <label for="shipment">Request for shipment : </label>
+                <input type="text" id="shipment" required>
+            </div>
+            <div class="form-item">
+                <label for="trackingId">TrackingId : </label>
+                <input type="text" id="trackingId" required>
+            </div>
+            <div class="form-item">
+                <label for="size">Shipment Size : </label>
+                <input type="text" id="size" required>
+            </div>
+            <div class="form-item">
+                <label for="boxCount">Box Count : </label>
+                <input type="text" id="boxCount" required>
+            </div>
+            <div class="error-msg" id="error-boxCount"></div>
+
+            <div class="form-item">
+                <label for="specification">Specification : </label>
+                <input type="text" id="specification" required>
+            </div>
+            <div class="form-item">
+                <label for="checklist">Checklist Quantity : </label>
+                <input type="text" id="checklist" required>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="form-filled">
+        Form submitted successfully
+    </div>
+
+    <script src="js/customer.js"></script>
+</body>
+</html>

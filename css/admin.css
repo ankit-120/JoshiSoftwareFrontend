@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    height: 80px;
+    background-color: rgb(3, 36, 65);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.main-content{
+    width: 60%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(3, 36, 65);
+    padding: 50px 100px 50px 100px;
+    color: white;  
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid white;
+}
+
+td{
+    border: 1px solid white;
+    padding: 8px;
+}
+
+#admin{
+    padding-left: 20px;
+}
+
+#logout{
+    cursor: pointer;
+    padding: 5px;
+}
+
+#logout:hover{
+    border: 2px solid white;
+}
