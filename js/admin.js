@@ -6,7 +6,7 @@ let options={
 }
 
 async function getItems(){
-    let response = await fetch(`http://localhost:8080/joshiSoftware/item/`,options);
+    let response = await fetch(`https://joshisoftware-production.up.railway.app/joshiSoftware/item/`,options);
     let data = await response.json();
     console.log(data.length);
     let len = data.length;

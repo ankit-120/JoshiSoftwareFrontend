@@ -68,7 +68,7 @@ submit.onclick = async(e) =>{
         body:data
     }
 
-    let response= await fetch(`http://localhost:8080/joshiSoftware/item/`,options);
+    let response= await fetch(`https://joshisoftware-production.up.railway.app/joshiSoftware/item/`,options);
     if(response.status == 201){
         let res= await response.json();
         console.log(res);

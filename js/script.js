@@ -18,7 +18,7 @@ login.onclick = async(e) =>{
         body:data
     }
 
-    let response= await fetch(`http://localhost:8080/joshiSoftware/login/`,options);
+    let response= await fetch(`https://joshisoftware-production.up.railway.app/joshiSoftware/login/`,options);
     if(response.status == 200){
         let res= await response.json();
         console.log(res);
